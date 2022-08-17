@@ -36,8 +36,6 @@ public class PostProcessingConstant {
 	public static final String LOG_FILE = "smartcommpostprocessing_";
 	public static final String APPLICATION_PROPERTY_DIRECTORY = "property";
 	public static final String PROPERTY_FILE_NAME = "application.properties";
-	public static final String ACCOUNT_KEY_VALUE = "DefaultEndpointsProtocol=https;AccountName=postprocessingdevstorage;AccountKey=77aZSz9krOEU7MMc9T25bDWjiopS3PKga33SQ7aTkb9tYz5AlB4HYExi5lmnWp0Xl69hAERFw879+AStAs8jTQ==;EndpointSuffix=core.windows.net";
-	public static final String CONTAINER_NAME = "sc-output";
 	public static final int MEMORY_SIZE = 8192;
 	public static final String MAIL_FAILURE = "mail sending failure";
 	
