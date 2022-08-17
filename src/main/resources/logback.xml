@@ -1,0 +1,21 @@
+<configuration>
+	<timestamp key="timestamp" datePattern="yyyy-MM-dd" />
+	<appender name="Console"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%d{yyyy-MMM-dd HH:mm:ss a} [%t] %-5level %logger{36} - %msg%n</Pattern>
+		</layout>
+	</appender>
+	<appender name="FILE-API"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>smartcommpostprocessing_${timestamp}.log</file>
+		<encoder>
+			<pattern>%d{yyyy-MMM-dd HH:mm:ss a} [%t] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<root level="info">
+		<appender-ref ref="FILE-API" />
+		<appender-ref ref="Console" />
+	</root>
+</configuration>
